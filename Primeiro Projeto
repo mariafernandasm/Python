@@ -1,0 +1,33 @@
+print (40*"*")
+print ("Seja bem vindo(a) ao meu primeiro projeto!")
+print (40*"*")
+
+from time import sleep
+
+usuario = (input("Digite seu nome: "))
+print ("Iniciando caculadora...")
+sleep (2)
+print (f"Calculadora iniciada. Vamos começar {usuario}? ")
+
+continua = "s"
+while (continua=="s"):
+    num1 = float(input('Digite o primeiro número: '))
+    op = (input ("Digite a operação:(+, -, *, /): "))
+    num2 = float(input('Digite o segundo número: '))
+    if (op=="+"):
+        resultado = num1 + num2 
+    elif (op=="-"):
+        resultado = num1 - num2 
+    elif (op=="*"):
+        resultado = num1 * num2 
+    elif (op=="/"):
+        resultado = num1 / num2 
+    else:
+        resultado = 0
+    
+    print(f"O resultado é:{resultado}")
+    
+    continua =(input("Deseja continuar? (s/n)  "))
+
+print("Espero ter ajudado!")
+
